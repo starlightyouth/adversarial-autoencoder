@@ -1,4 +1,4 @@
-import cPickle as pickle
+import cPickle as pickle     #序列化模块
 from lasagne.layers import InputLayer
 from lasagne.layers import ConcatLayer
 from lasagne.layers import DenseLayer
@@ -9,7 +9,7 @@ from lasagne.nonlinearities import linear, rectify, sigmoid
 
 def save_weights(weights, filename):
     with open(filename, 'wb') as f:
-        pickle.dump(weights, f, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(weights, f, protocol=pickle.HIGHEST_PROTOCOL)。 #protocol提高序列化速度
 
 
 def load_weights(layer, filename):

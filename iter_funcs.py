@@ -1,4 +1,4 @@
-def get_batch_idx(N, batch_size):
+def get_batch_idx(N, batch_size): 
     num_batches = (N + batch_size - 1) / batch_size
 
     for i in range(num_batches):
